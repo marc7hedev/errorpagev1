@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+/* img{
+    max-width: 100%;
+    height: auto;
+} */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h2{
+    font-size: 2.8rem;
+    line-height: 2em;
+    color: #fff;
+    filter: drop-shadow(1px 1px 10px #fff);
+}
+.container p{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.button{
+    display: inline-block;
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.button:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 10px #fff);
+}
+.button:hover .button__icon{
+    transform: translateX(-.45rem);
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+.button__icon{
+    font-size: 1.25rem;
+    margin-right: 0.2rem;
+    transition: .3s;
+}
+.button--small{
+    padding: .75rem 1rem;
+}
